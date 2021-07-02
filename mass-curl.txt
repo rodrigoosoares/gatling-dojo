@@ -1,0 +1,41 @@
+curl --location --request PUT 'http://localhost:8080/v2/' \
+--header 'Content-Type: application/json' \
+--header 'country: US' \
+--header 'x-timestamp: 1614950603' \
+--header 'requestTraceId: 38b812eb-8ca5-4f61-8c81-a04729e41626' \
+--header 'timezone: America/Sao_Paulo' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5eDdMbWZrX2s5YWNKR0R6N0VJQ0RZdDZON1FFeUVzMzVLUGtOS0p2c1NBIn0.eyJleHAiOjE2MjUxNzQ3MTcsImlhdCI6MTYyNTE3MTExNywianRpIjoiNmRjZDZhZGEtZTcxMi00NDc5LWJkZmUtYWQ0YzljMjgxMTU4IiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLXNlcnZpY2UvYXV0aC9yZWFsbXMvYmVlcy1yZWFsbSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyYTQyNGUzYS01ZjMwLTQ4NjYtYTJlYi1jYWM0NWE3OTY3ODYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZWVjNzY3Ny05ZTBlLTRkODEtOThjZS0wNTg0OGUzOTI3OWIiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRJZCI6ImFlZWM3Njc3LTllMGUtNGQ4MS05OGNlLTA1ODQ4ZTM5Mjc5YiIsImNsaWVudEhvc3QiOiIxMjcuMC4wLjEiLCJyb2xlcyI6WyJXcml0ZSIsIlJlYWQiXSwidmVuZG9ySWQiOiJSLVYtMDAxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWFlZWM3Njc3LTllMGUtNGQ4MS05OGNlLTA1ODQ4ZTM5Mjc5YiIsImNsaWVudEFkZHJlc3MiOiIxMjcuMC4wLjEifQ.eOmw6YdpWplHi8-TfMtuKBgouL2K1qWAwF7BoQF08t-isLFV2RAn6WzdeE5rxBY4rcelqSCfopzK20vhUnFNs7OlnnwSgQLnjGq19Nj2MKO_tR2QURXn91fqaPelu2NPrlykafQVB2Mww_qCGKTqLRhAUo8GLMQrydg_3TtGDb82hyMSScRFoCA2NJ0uO_AZH6xRAiJa8DD4Iw2LSuy-SXM-mD7mWT0tXltIJ9au-5Y7ICx8l00LSfhMLoaWDAV4hZ1dqYblnWLuKbdQZtzmoPG5J6CL-9quxiCOAED18oQH966YEK0tJUoqZQy08GKkLHxR45bH7CC8VXB9rM8EXA' \
+--data-raw '{
+    "vendorAccountIds": [
+        "LOCAL-US"
+    ],
+    "prices": [
+        {
+            "vendorItemId": "SKU001_US",
+            "sku": "SKU001_US",
+            "basePrice": 20,
+            "measureUnit": "CS",
+            "minimumPrice": 0,
+            "deposit": 10,
+            "quantityPerPallet": 50
+        },
+        {
+            "vendorItemId": "SKU002_US",
+            "sku": "SKU002_US",
+            "basePrice": 40,
+            "measureUnit": "CS",
+            "minimumPrice": 0,
+            "deposit": 5,
+            "quantityPerPallet": 50
+        },
+        {
+            "vendorItemId": "SKU003_US",
+            "sku": "SKU003_US",
+            "basePrice": 60,
+            "measureUnit": "CS",
+            "minimumPrice": 0,
+            "deposit": 15,
+            "quantityPerPallet": 50
+        }
+    ]
+}'
