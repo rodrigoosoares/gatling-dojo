@@ -1,4 +1,4 @@
-curl --location --request PUT 'http://localhost:8080/v2/' \
+curl --location --request PUT 'http://localhost:9402/v2/' \
 --header 'Content-Type: application/json' \
 --header 'country: US' \
 --header 'x-timestamp: 1614950603' \
