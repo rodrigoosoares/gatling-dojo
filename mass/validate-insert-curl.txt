@@ -1,0 +1,6 @@
+curl --location --request GET 'http://localhost:9403/v2' \
+--header 'country: US' \
+--header 'requestTraceId: 0f408273-057c-4772-bc01-bd009a421227' \
+--header 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYi1pbmJldiIsImF1ZCI6ImFiaS1taWNyb3NlcnZpY2VzIiwiZXhwIjoxODY2NzE5Nzg1LCJpYXQiOjE1MTYyMzkwMjIsInVwZGF0ZWRfYXQiOjExMTExMTEsInJvbGVzIjpbIlJPTEVfQ1VTVE9NRVIiXX0.pzD-eR4xQJnZ8o_HwB6kALGsBss4Jbsk4oeceq2h0rY' \
+--header 'vendorAccountId: LOCAL-US' \
+--header 'vendorId: R-V-001'
